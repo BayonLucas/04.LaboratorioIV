@@ -1,0 +1,21 @@
+<!-- 
+    {{}} - Interpolacion
+    [] - Property Binding
+    () - Event Binding
+    ([]) - Two Way Binding
+-->
+
+
+
+<!-- {{}} - Interpolacion: Puede ir en cualquier lado -->
+<h1>{{name}}</h1> 
+
+<!-- ([]) - Two Way Binding: Afecta ambos lados -->
+<input type = "text" [(ngModel)] = "apellido" placeholder = "Ingrese apellido">
+
+<!-- [] - Property Binding: Aplicable para atributos de un elemento --> 
+<!-- () - Event Binding: De la vista al controller -->
+<input type="button" [value]="btnLabel" (click)="onClick($event)"> 
+<hr>
+
+<h2>{{apellido}}</h2>
