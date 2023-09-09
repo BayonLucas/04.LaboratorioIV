@@ -1,0 +1,19 @@
+<h1>Login</h1>
+
+<label for="">User: 
+    <input type="text" [(ngModel)]="user" placeholder="Ingrese usuario">
+</label>
+<br><br>
+<label for="">Password: 
+    <input type="text" [(ngModel)]="pass" placeholder="Ingrese contraseña">
+</label>
+<br><br>
+<input type="button" value="Ingresar" (click)="verificar_usuario()">
+
+<div *ngIf="result">
+    <app-bienvenido></app-bienvenido>
+</div>
+<div *ngIf="result == false">
+    <app-error></app-error>
+</div>
+

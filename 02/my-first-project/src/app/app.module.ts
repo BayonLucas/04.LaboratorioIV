@@ -3,20 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ComponentsComponent } from './components/components.component';
-import { ComponentsprimeroComponent } from './componentsprimero/componentsprimero.component';
+// import { ComponentsComponent } from './components/components.component';
 import { SegundoComponent } from './components/segundo/segundo.component';
 import { PrimeroComponent } from './components/primero/primero.component';
 import { TerceroComponent } from './components/tercero/tercero.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ComponentsComponent,
-    ComponentsprimeroComponent,
+    // ComponentsComponent,
     SegundoComponent,
     PrimeroComponent,
-    TerceroComponent
+    TerceroComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
